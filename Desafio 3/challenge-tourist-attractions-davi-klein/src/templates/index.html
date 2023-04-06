@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+    <link rel="stylesheet" href="main.css">
+    <title>Pontos Turísticos</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1 class="title-form" data-test="title-form">Adicionar um Ponto Turístico</h1>
+            <form class="form">
+                <div class="form-container">
+                    <div class="form-inputs">
+                        <div data-test="input-image" class="input-image-container">
+                            <label class="picture" tabindex="0" for="picture-input">
+                                <img id="preview-img"/>
+                                <span id="picture-image" class="picture-image">Imagem</span>
+                            </label>
+                            <input
+                                type="file"
+                                placeholder="images"
+                                accept="image/*"
+                                id="picture-input"
+                                name="item-imagem"
+                            />
+                        </div>
+                        <div class="form-tittle-description">
+                            <input
+                                type="text"
+                                placeholder="Titulo"
+                                data-test="input-titulo"
+                                class="input-title"
+                                name="item-titulo"
+                            />
+                            <textarea
+                            cols="30"
+                            rows="10"
+                            placeholder="Descrição"
+                            data-test="input-descrição"
+                            class="input-descricao"
+                            name="item-descricao"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <button class="form-button" type="submit" data-test="button-submit">Adicionar</button>
+                </div>
+            </form>
+            <div class="itens-container">
+                <h2 class="title-list" data-test="title-list">Pontos Turísticos</h2>
+                <ul class="form-result" data-test="container-item-list"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script src="bundle.js"></script>
+</body>
+</html>

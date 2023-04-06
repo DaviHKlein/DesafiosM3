@@ -1,0 +1,29 @@
+.picture-image,
+.input-title,
+.input-descricao,
+.form-tittle-description,
+.item-description{
+    font-family: 'Roboto';
+}
+
+.form-button,
+.title-form,
+.title-list,
+.item-title{
+    font-family: 'Poppins';
+}
+
+.picture,
+.form-button{
+    cursor: pointer;
+}
+
+.input-title,
+.input-descricao,
+.input-image-container,
+#preview-img,
+.form-button,
+.list-item-imagem,
+.form-result li{
+    border-radius: 8px;
+}

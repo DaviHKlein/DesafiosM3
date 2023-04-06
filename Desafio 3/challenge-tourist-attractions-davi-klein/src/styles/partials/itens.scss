@@ -1,0 +1,233 @@
+.itens-container {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.title-list {
+    font-size: 32px;
+    color: $black-00;
+    margin-bottom: 38px;
+}
+
+.form-result {
+    list-style: none;
+    width: 100%;
+}
+
+.form-result li {
+    background: $white;
+    box-shadow: 0px 4px 16px $cards-box-shadow;
+}
+
+.list-item-imagem {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    height: 212px;
+    width: 100%;
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 24px 8px;
+    height: 60px;
+    overflow: auto;
+    color: $black-00;
+}
+
+.item-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 96px;
+    margin: 0 24px 24px;
+    overflow: auto;
+    color: $gray-85;
+}
+
+.slick-slide {
+    margin: 0 10.5px;
+}
+
+.slick-list {
+    margin: 0 -10.5px;
+}
+
+.slick-next {
+    background: url("../images/direita.png") no-repeat;
+    width: 13.84px;
+    height: 29.47px;
+    margin: 0 -40px;
+}
+
+.slick-prev {
+    background: url("../images/esquerda.png") no-repeat;
+    width: 13.84px;
+    height: 29.47px;
+    margin: 0 -40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: transparent;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+    background: url("../images/direita.png") no-repeat;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+    background: url("../images/esquerda.png") no-repeat;
+}
+
+.slick-dots li button::before {
+    font-family: "slick";
+    font-size: 10px;
+    line-height: 20px;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    color: #858585;
+}
+
+.slick-dots li.slick-active button:before {
+    color: transparent;
+}
+
+.slick-active button:before {
+    font-family: "slick";
+    border-radius: 50%;
+    border: 1px solid #858585;
+    width: 15px;
+    height: 15px;
+}
+
+.slick-dots li {
+    margin: 0 6px;
+}
+
+.slick-track {
+    margin-bottom: 16.2px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1440px) {
+    .form-result li {
+        max-width: 279px;
+    }
+}
+
+@media screen and (max-width: 2500px) and (min-width: 2500px) {
+    .form-result li {
+        max-width: 544px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .title-list {
+        width: 100%;
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .list-item-imagem {
+        height: 400px;
+    }
+
+    .item-title {
+        font-size: 48px;
+        line-height: 56px;
+        height: 120px;
+    }
+
+    .item-description {
+        font-size: 32px;
+        line-height: 48px;
+        height: 192px;
+    }
+
+    .slick-next,
+    .slick-next:hover,
+    .slick-next:focus {
+        background: url("../images/direitagrande.png") no-repeat;
+        width: 26px;
+        height: 58px;
+        margin: 0 -30px;
+    }
+
+    .slick-prev,
+    .slick-prev:hover,
+    .slick-prev:focus {
+        background: url("../images/esquerdagrande.png") no-repeat;
+        width: 26px;
+        height: 58px;
+        margin: 0 -30px;
+    }
+
+    .slick-dots li button::before {
+        font-family: "slick";
+        font-size: 20px;
+        line-height: 29.5px;
+        width: 25px;
+        height: 25px;
+        opacity: 1;
+        color: #858585;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .itens-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .title-list {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .form-result {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .list-itens{
+        height: 710px;
+    }
+
+    .list-item-imagem {
+        display: block;
+        height: 570px;
+        width: 100%;
+    }
+
+    .item-description {
+        font-size: 16px;
+        height: 24px;
+    }
+
+    .slick-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .title-list {
+        width: 100%;
+    }
+
+    .list-itens {
+        height: 400px;
+    }
+
+    .list-item-imagem {
+        height: 212px;
+    }
+
+    .item-description {
+        height: 72px;
+    }
+}
