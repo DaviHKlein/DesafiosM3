@@ -1,0 +1,162 @@
+@import "../components/Variables.scss";
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1025px) {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .form-entryes {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    label {
+      color: $color-black-800;
+      margin: 12px 0 12px 15px;
+
+      @media (min-width: 2500px) {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+
+    input {
+      width: calc(100% - 42px);
+      height: 14px;
+      padding: 15px 20px;
+      border: 1px solid $color-black-800;
+      border-radius: 25px;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-gray-300;
+      margin: 0;
+
+      @media (min-width: 2500px) {
+        height: 31px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+      }
+
+      &::placeholder {
+        color: $color-gray-300;
+      }
+    }
+  }
+  .error {
+    display: flex;
+    justify-content: end;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-red;
+    position: absolute;
+    align-self: flex-end;
+    top: 25px;
+
+    @media (min-width: 2500px) {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .checkbox_wrapper {
+    margin: 12px 0;
+    position: relative;
+    span {
+      display: flex;
+      justify-content: flex-start !important;
+      margin-left: 13px;
+      margin-right: 2px;
+      color: #ff0000;
+      @media (min-width: 2500px) {
+        font-size: 26px;
+      }
+    }
+    label {
+      margin-left: 0;
+      text-decoration: underline;
+      @media (min-width: 2500px) {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+  }
+
+  button {
+    height: 52.44px;
+    letter-spacing: 0.05em;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 17px;
+    background: $color-black;
+    border-radius: 25px;
+    color: $color-white;
+
+    @media (min-width: 2500px) {
+      height: 71px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      padding: 16px 17px 17px 17px;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      order: 2;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    input {
+      order: 3;
+      width: 18px;
+      height: 18px;
+      border: 1px solid $color-black;
+      border-radius: 3px;
+      margin: 0 4px 3px;
+
+      @media (min-width: 2500px) {
+        width: 36.4px;
+        height: 35.15px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      text-align: center;
+    }
+  }
+}

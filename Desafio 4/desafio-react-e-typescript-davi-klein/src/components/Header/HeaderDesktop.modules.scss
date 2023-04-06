@@ -1,0 +1,148 @@
+@import "../Variables.scss";
+
+.HeaderDesktop {
+  display: flex;
+  justify-content: space-between;
+  height: 31px;
+  padding: 22px 100px;
+  background: $color-black;
+  font-family: $fontFamily;
+  border-bottom: 1px solid $color-gray;
+
+  @media (min-width: 2500px) {
+    height: 56px;
+  }
+
+  .m3LogoWrapper {
+    display: flex;
+    align-items: center;
+
+    .M3Logo {
+      width: 100%;
+      @media (min-width: 2500px) {
+        width: 265.62px;
+        height: 50.5px;
+      }
+    }
+  }
+
+  .Search_Header_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 24.445%;
+    max-width: 515px;
+
+    .Search_Header {
+      position: relative;
+      width: 100%;
+      height: 12px;
+      padding: 8px 16px;
+      border: 2px solid $color-white-100;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-gray;
+
+      &::placeholder {
+        color: $color-gray;
+      }
+
+      @media (min-width: 2500px) {
+        height: 29px;
+        padding: 12px 16px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+  }
+  .Search_Header_wrapper::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 7px;
+    right: 16px;
+    background-image: url("../assets/imgs/SVGs/search-icon-desktop.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    @media (min-width: 2500px) {
+      width: 35.15px;
+      height: 35.15px;
+      background-size: contain;
+      top: 10px;
+    }
+  }
+  .Headerlinks {
+    display: flex;
+    gap: 55px;
+
+    .EnterLink {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-white;
+      text-decoration: none;
+
+      @media (min-width: 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+
+    .CartIcon_Wrapper {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      .CartIcon {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ContentHeader_wrapper {
+  padding: 14px 100px;
+  background: $color-black;
+  font-family: $fontFamily;
+  font-style: normal;
+  gap: 55px;
+  display: flex;
+  height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: 2500px) {
+    height: 33px;
+  }
+
+  button {
+    padding: 0;
+    background: $color-black;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: $fontFamily;
+    @media (min-width: 2500px) {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+}
